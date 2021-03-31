@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@300;400&family=Squada+One&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/784c519c48.js" crossorigin="anonymous"></script>
     <link
   rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -19,10 +18,17 @@
 </head>
 <body>
     <nav id="navbar">
-        <ul>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="nav-flex-div">
+            <h2>José Ignacio <span>Web Dev</span></h2>
+            <a href="javascript:void(0);" id="navIconDiv" class="icon-a" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <ul id="navLinks">
+            <li id="workLi"><a href="#projects" onclick="hideNav()">Work</a></li>
+            <li><a href="#contact" onclick="hideNav()">Contact</a></li>
         </ul>
+        
     </nav>
     <main>
         <section id="welcome-section">
@@ -137,6 +143,6 @@
         <p class="prev-project"><small>Previous Project: <a href="#">Technical Documentation Page</a></small></p>
         <p class="developer"><small>Developed by <a href="https://github.com/josealdunate" id="profile-link" target="_blank">José Ignacio Aldunate</a></small></p>
     </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
